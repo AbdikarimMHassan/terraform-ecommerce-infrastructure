@@ -1,4 +1,4 @@
 # terraform-ecommerce-infrastructure
 My Terraform Project
 New changes
-n/ newer changes
+newer changes
