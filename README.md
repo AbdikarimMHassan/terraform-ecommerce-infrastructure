@@ -2,7 +2,7 @@
 
 This project provisions a **highly available e-commerce architecture** on **AWS** using **Terraform**, following modern **Infrastructure as Code (IaC)** best practices.
 
-It demonstrates **modular design**, **least-privilege security**, **idempotent deployments**, and **scalable automation** — core principles of **DevOps** and **Cloud Engineering**.
+It demonstrates **modular design**, **least-privilege security**, **idempotent deployments**, and **scalable automation**.
 
 ---
 
