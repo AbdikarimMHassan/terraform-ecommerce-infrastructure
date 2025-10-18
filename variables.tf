@@ -79,3 +79,8 @@ variable "availability_zone_1b" {
     type = string
   
 }
+
+
+
+
+
