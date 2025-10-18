@@ -31,26 +31,35 @@ It demonstrates **modular design**, **least-privilege security**, **idempotent d
 - 🔹 **Automated Notifications** – SNS triggers for EC2 behavior (e.g., scaling events)  
 - 🔹 **Remote State Management** – Centralized Terraform state via S3 backend
 
-'''
+## 📁 Project Structure
 
-## 🗂️ Project Structure
+```plaintext
 terraform-ecommerce-infrastructure/
 ├── main.tf
 ├── provider.tf
 ├── variables.tf
 ├── modules/
-│ ├── vpc/
-│ ├── security-groups/
-│ ├── Database/
-│ ├── alb/
-│ ├── asg/
-│ ├── sns/
-│ └── Route53/
-└── docs/
+│   ├── vpc/
+│   ├── security-groups/
+│   ├── Database/
+│   ├── alb/
+│   ├── asg/
+│   ├── sns/
+│   └── Route53/
+├── docs/
 └── screenshot-home.png
 
+---
 
-'''
+### 🔍 Important details:
+- Make sure there’s **no extra space** before or after the first and last triple backticks.  
+- The first triple backticks are followed by `plaintext` (this keeps the tree clean and readable).  
+- If you paste it in VS Code or GitHub, the tree will appear **exactly as it looks in your editor** — neatly aligned.
+
+---
+
+If you want, I can rewrite your whole README section (up to “How to Deploy”) with clean spacing and emoji icons — it’ll look professional both in raw and rendered form. Would you like that?
+
 
 ## ⚙️ How to Deploy
 
