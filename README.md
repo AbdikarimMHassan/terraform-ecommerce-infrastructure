@@ -31,7 +31,7 @@ It demonstrates **modular design**, **least-privilege security**, **idempotent d
 - 🔹 **Automated Notifications** – SNS triggers for EC2 behavior (e.g., scaling events)  
 - 🔹 **Remote State Management** – Centralized Terraform state via S3 backend
 
----
+'''
 
 ## 🗂️ Project Structure
 terraform-ecommerce-infrastructure/
@@ -50,7 +50,7 @@ terraform-ecommerce-infrastructure/
 └── screenshot-home.png
 
 
----
+'''
 
 ## ⚙️ How to Deploy
 
