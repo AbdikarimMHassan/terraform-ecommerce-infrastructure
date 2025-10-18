@@ -47,7 +47,7 @@ terraform-ecommerce-infrastructure/
 │   ├── sns/
 │   └── Route53/
 ├── docs/
-└── screenshot-home.png
+└── webimage.png
 
 ---
 
