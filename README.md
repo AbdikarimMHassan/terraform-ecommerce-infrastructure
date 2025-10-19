@@ -61,6 +61,8 @@ terraform validate
 terraform plan
 terraform apply
 
+```
+
 
 ## 🧠 **Highlights**
 
