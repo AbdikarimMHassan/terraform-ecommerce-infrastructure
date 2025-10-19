@@ -73,5 +73,7 @@ terraform apply
 - 🌍 **Multi-AZ, Scalable, and Idempotent Infrastructure** – Ensures **high availability**, **fault tolerance**, and **repeatable deployments**
 - 🏠 **Originally Hosted on abdikarim-tech.com** – The live infrastructure was later **decommissioned to save cost**, with screenshots preserved for reference
 
+![Alt text](webimage.png)
+
 
 
