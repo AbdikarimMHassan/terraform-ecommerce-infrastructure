@@ -1,5 +1,4 @@
 # create a launch template
-# terraform aws launch template
 resource "aws_launch_template" "webserver_launch_template" {
   name          = var.asg_launch_template_name
   image_id      = var.ec2_ami_id
@@ -17,7 +16,6 @@ resource "aws_launch_template" "webserver_launch_template" {
 }
 
 # create auto scaling group
-# terraform aws autoscaling group
 resource "aws_autoscaling_group" "auto_scaling_group" {
   vpc_zone_identifier = var.asg_subnet_id
   desired_capacity    = 2
@@ -45,14 +43,12 @@ resource "aws_autoscaling_group" "auto_scaling_group" {
 }
 
 # attach auto scaling group to alb target group
-# terraform aws autoscaling attachment
 resource "aws_autoscaling_attachment" "asg_alb_target_group_attachment" {
   autoscaling_group_name = aws_autoscaling_group.auto_scaling_group.id
   lb_target_group_arn    = var.alb_target_group_arn
 }
 
 # create an auto scaling group notification
-# terraform aws autoscaling notification
 resource "aws_autoscaling_notification" "webserver_asg_notifications" {
   group_names = [aws_autoscaling_group.auto_scaling_group.name]
 
