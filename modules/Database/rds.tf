@@ -1,5 +1,4 @@
 # create database subnet group
-# terraform aws db subnet group
 resource "aws_db_subnet_group" "dbsubnet_group" {
   name         = var.db_name
   subnet_ids   = var.subnet_ids
@@ -11,14 +10,12 @@ resource "aws_db_subnet_group" "dbsubnet_group" {
 }
 
 # get the latest db snapshot
-# terraform aws data db snapshot
 data "aws_db_snapshot" "latest_db_snapshot" {
   db_snapshot_identifier = var.db_snapshot_identifier
   most_recent            = true
   snapshot_type          = "manual"
 }
-# create database instance restored from db snapshots
-# terraform aws db instance
+# create database instance 
 resource "aws_db_instance" "database_instance" {
   instance_class          = var.rds_instance_class
   skip_final_snapshot     = false
